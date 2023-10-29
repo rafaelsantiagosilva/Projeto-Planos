@@ -1,6 +1,6 @@
 @media screen and (max-width: 700px){
     .Planos{
-        scale: 0.7;
+        scale: 0.6;
         left: 5vh;
         top: 15em;
     }
@@ -10,12 +10,13 @@
     }
 }
 
-@media screen and (min-width: 701px) and (max-width: 1200px) {
+@media screen and (min-width: 701px) and (max-width: 1300px) {
     .card{
         margin: 3em;
     }
 
     .Planos{
         left: 2vh;
+        scale: 0.7;
     }
 }
