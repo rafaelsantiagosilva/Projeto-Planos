@@ -148,6 +148,8 @@ footer {
     z-index: 5;
     border-radius: 9px;
     padding: 7em;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .Planos>h3 {
