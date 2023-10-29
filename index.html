@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolva seus jogos!</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css" media="screen and (orientation: portrait)">
+    <link rel="shortcut icon" href="img/icon.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Veja aqui nosso planos!</h1>
+        <h2 class="pixel">Observe seus benefícios e veja qual se enquadra mais com você!</h2>
+    </header>
+
+    <main>
+        <div class="container-flex">
+            <div class="Planos" id="windowBasico">
+                <h3>Você escolheu o plano básico!</h3>
+                <p>Foi uma ótima escolha para você que quer ver sobre desenvolvimento de jogos sem gastar muito</p><br>
+                <h2>Obrigado por assinar nosso plano!</h2>
+                <button class="Finalizar" onclick="window.location.reload()">Finalizar</button>
+            </div>
+
+            <div class="Planos" id="windowAvancado">
+                <h3>Você escolheu o plano avançado!</h3>
+                <p>Foi uma ótima escolha para você que quer investir um pouco mais para saber mais sobre desenvolvimento
+                    de jogos</p><br>
+                <h2>Obrigado por assinar nosso plano!</h2>
+                <button class="Finalizar" onclick="window.location.reload()">Finalizar</button>
+            </div>
+
+
+            <div class="Planos" id="windowPremium">
+                <h3>Você escolheu o plano premium!</h3>
+                <p>Foi uma ótima escolha para você que quer se tornar um grande desenvolvedor de jogos!</p><br>
+                <h2>Obrigado por assinar nosso plano!</h2>
+                <button class="Finalizar" onclick="window.location.reload()">Finalizar</button>
+            </div>
+
+            <section class="card flex-item">
+                <div class="card-header">
+                    <h3>Básico</h3>
+                </div>
+
+                <img src="./img/unity.png" class="card-img1">
+
+                <div class="card-main">
+                    <p>Básico. Ele te fornece o básico sobre criação de jogos e te ensina a criar um jogo único de
+                        plataforma!
+                    </p>
+
+                    <ul>
+                        <span class="material-icons green">task_alt </span>Ensina programação <br>
+
+                        <span class="material-icons green">task_alt </span>Criação de um projeto<br>
+
+                        <span class="material-icons green">task_alt </span>Engine: Unity<br>
+
+                        <span class="material-icons red">highlight_off </span>Criação de sprites e game design<br>
+
+                        <span class="material-icons red">highlight_off </span>Criação de músicas e suas ambientações<br>
+
+                        <span class="material-icons red">highlight_off </span>Tutoria pessoal<br>
+
+                        <span class="material-icons red">highlight_off </span>Publicação de jogos<br>
+                    </ul>
+                </div>
+
+                <div class="card-footer">
+                    <p>R$100,<span class="float">00</span></p>
+                    <button id="btnBasico" class="card-button">Assinar</button>
+                </div>
+            </section>
+
+            <section class="card flex-item">
+                <div class="card-header">
+                    <h3>Avançado</h3>
+                </div>
+
+                <img src="./img/unity.png" class="card-img1">
+                <img src="./img/unreal.png" class="card-img2">
+                <div class="card-main">
+                    <p>Avançado. Ele te fornece conteúdos adicionais, te ensinando a criar ótimos assets para
+                        jogos!
+                    </p>
+
+                    <ul>
+                        <span class="material-icons green">task_alt </span>Ensina programação<br>
+
+                        <span class="material-icons green">task_alt </span>Criação de um projeto<br>
+
+                        <span class="material-icons green">task_alt </span>Engines: Unity, Unreal<br>
+
+                        <span class="material-icons green">task_alt </span>Criação de sprites e game design<br>
+
+                        <span class="material-icons red">highlight_off </span>Criação de músicas e suas ambientações<br>
+
+                        <span class="material-icons red">highlight_off </span>Tutoria pessoal<br>
+
+                        <span class="material-icons red">highlight_off </span>Publicação de jogos<br>
+                    </ul>
+                </div>
+
+                <div class="card-footer">
+                    <p>R$300,<span class="float">00</span></p>
+                    <button id="btnAvancado" class="card-button">Assinar</button>
+                </div>
+            </section>
+
+            <section class="card flex-item">
+                <div class="card-header">
+                    <h3>Premium</h3>
+                </div>
+
+                <img src="./img/unity.png" class="card-img1">
+                <img src="./img/unreal.png" class="card-img2">
+                <img src="./img/godot.png" class="card-img3">
+
+                <div class="card-main">
+                    <p>Premium. Ele te fornece conteúdo completo sobre criação de jogos, desde programação, assets
+                        e mais!
+                    </p>
+
+                    <ul>
+                        <span class="material-icons green">task_alt </span>Ensina programação<br>
+
+                        <span class="material-icons green">task_alt </span>Criação de um projeto<br>
+
+                        <span class="material-icons green">task_alt </span>Engines: Unity, Unreal, Godot<br>
+
+                        <span class="material-icons green">task_alt </span>Criação de sprites e game design<br>
+
+                        <span class="material-icons green">task_alt </span>Criação de músicas e suas ambientações<br>
+
+                        <span class="material-icons green">task_alt </span>Tutoria pessoal<br>
+
+                        <span class="material-icons green">task_alt </span>Publicação de jogos<br>
+                    </ul>
+                </div>
+
+                <div class="card-footer" style="margin-top: 12px;">
+                    <p>R$750,<span class="float">00</span></p>
+                    <button id="btnPremium" class="card-button">Assinar</button>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <p class="pixel">&copy;Rafael Santiago</p>
+        <p class="pixel">&copy;Lucas Tompson</p>
+    </footer>
+
+    <script src="./assinou.js"></script>
+</body>
+
+</html>

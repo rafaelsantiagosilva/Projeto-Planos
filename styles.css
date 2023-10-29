@@ -1,0 +1,247 @@
+@charset "utf8";
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Pixelify+Sans:wght@500&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 0;
+}
+
+body {
+    color: white;
+    background-color: #1C1C1C;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgb(255, 190, 70), rgb(231, 163, 37), rgb(231, 170, 37), rgb(206, 138, 37), rgb(218, 90, 59));
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    box-shadow: 0 7px 9px 0 rgba(139, 139, 139, 0.829);
+}
+
+
+.pixel {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+}
+
+/* Page Title */
+h1.title {
+    margin-bottom: 1em;
+    text-shadow: 6px 7px 6px black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+main {
+    margin-top: 8em;
+    margin-bottom: 8em;
+}
+
+/* Flexbox */
+div.container-flex {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.flex-item {
+    width: 300px;
+    transition: transform 1.1s;
+}
+
+section.flex-item:hover {
+    transition-duration: 1.1s;
+    transform: scale(1.1);
+}
+
+/* Card */
+section.card {
+    width: 280px;
+    /* 33.7 e 48 para vh*/
+    height: 450px;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px orange;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card-header>* {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.card-main>p {
+    text-align: center;
+    margin-bottom: 1em;
+    pointer-events: none;
+}
+
+.card-footer {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.card-footer>p {
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.4em;
+}
+
+.card-footer span {
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 0.8em;
+}
+
+.card-button {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-top: 1em;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    border: 4px;
+    border-radius: 1000px;
+    border-color: orange;
+    color: orange;
+    box-shadow: inset 0 0 8px 0 orange, 0 0 8px 0 orange;
+    text-decoration: none;
+    background-color: transparent;
+    transition: all 0.6s ease-in-out 0s;
+}
+
+.card-button:hover {
+    background-color: orange;
+    color: white;
+    transform: scale(1.09)rotate(360deg);
+    box-shadow: 0 0 16px orange;
+}
+
+/* Lists */
+
+/* Footer */
+footer {
+    width: auto;
+    text-align: center;
+    padding: 2em;
+    box-shadow: 0 -6px 12px 0 rgba(136, 136, 136, 0.801);
+}
+
+/*Planos*/
+.Planos {
+    text-align: center;
+    position: absolute;
+    top: 27vh;
+    left: 75vh;
+    color: white;
+    box-shadow: 0 0 16px aqua;
+    text-shadow: 7px 6px 4px black;
+    width: 40vh;
+    height: 45vh;
+    z-index: 5;
+    border-radius: 9px;
+    padding: 7em;
+}
+
+.Planos>h3 {
+    backdrop-filter: blur(10px);
+    color: white;
+    text-shadow: 7px 6px 4px black;
+    border: none;
+}
+
+.Planos>p {
+    border: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 7px 6px 4px black;
+}
+
+.Planos>h2 {
+    margin-top: 88%;
+    color: white;
+    text-shadow: 7px 6px 8px black;
+}
+
+.Finalizar {
+    margin-top: 85%;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-top: 1em;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    border: 4px;
+    border-radius: 1000px;
+    border-color: aqua;
+    color: aqua;
+    box-shadow: inset 0 0 8px 0 aqua, 0 0 8px 0 aqua;
+    text-decoration: none;
+    background-color: #1C1C1C;
+    transition: all 0.6s ease-in-out 0s;
+}
+
+.Finalizar:hover {
+    background-color: aqua;
+    color: #1C1C1C;
+    transform: scale(1.09)rotate(360deg);
+    box-shadow: 0 0 16px aqua;
+}
+
+#windowBasico {
+    background: url(./img/fundo1.jpg);
+    display: none;
+}
+
+#windowAvancado {
+    background: url(./img/fundo2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+#windowPremium {
+    background: url(./img/fundo3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+/*icons*/
+.material-icons.green {
+    color: green;
+}
+
+.material-icons.red {
+    color: red;
+}
+
+.card-img1 {
+    margin-top: -50px;
+    margin-left: -20px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+.card-img2 {
+    margin-top: -50px;
+    margin-left: 7px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+.card-img3 {
+    margin-top: -50px;
+    margin-left: 30px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
