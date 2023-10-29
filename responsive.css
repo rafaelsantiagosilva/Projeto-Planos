@@ -9,3 +9,13 @@
         margin: 3em 0;
     }
 }
+
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+    .card{
+        margin: 3em;
+    }
+
+    .Planos{
+        left: 2vh;
+    }
+}
